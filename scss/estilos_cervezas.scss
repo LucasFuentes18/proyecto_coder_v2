@@ -1,0 +1,119 @@
+.estilos__top {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo_estilos.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+
+    h2 {
+        font-family: $titulos-font;
+        color: $titulos-color;
+        font-size: $titulos-size;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 360px) {
+    .estilos__top_h2 {
+        font-size: 50px;
+    }
+}
+
+
+.estilos {
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "titulo titulo""lager ale";
+    column-gap: 30px;
+    row-gap: 20px;
+}
+
+.estilos__tit {
+    font-size: 28px;
+    text-decoration: underline;
+    color: #1b1b1b;
+    text-align: center;
+    padding: 10 15;
+}
+
+.estilos__parrafo {
+    padding: 10 15;
+    text-align: center;
+}
+
+.container__img-lager {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/cerveza4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container__img-ale {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/cerveza3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.display-4__estilos {
+    color: white;
+    font-weight: 600;
+    color: #ff8b00;
+}
+
+.lead__estilos {
+    color: white
+}
+
+.col {
+    padding: 10 0;
+}
+
+.card-text1 {
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ff8b00;
+}
+
+.estilos__lager-img {
+    max-width: 80%;
+    padding: 10 15;
+    border-radius: 2rem;
+}
+
+.estilos__ale-img {
+    max-width: 80%;
+    padding: 10 15;
+    border-radius: 2rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .estilos {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 702px) {
+    .estilos {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    .estilos__parrafo {
+        padding: 15 35;
+    }
+
+    .estilos__tit {
+        padding: 10 15;
+    }
+}

@@ -1,0 +1,99 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="img/beer.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Todo sobre birras</title>
+</head>
+<body>
+   <!--Menu-->
+   <header>
+        <nav>
+            <div class="logo">
+            <a href="index.html">
+                <img class="logo__img" src="img/logo.png" alt="logo">
+             </a>
+            </div>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+           <li><a href="historia.html">Historia</a></li>
+           <li><a href="estilos.html">Estilos</a></li>
+           <li><a href="cervecerias.html">Mejores Cervecerías</a></li>
+           <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+         </nav>
+    </header>
+    <!--Contacto-->
+    <div class="contacto__top">
+        <h2 class="animate__animated animate__zoomIn">CONTACTO</h2>
+    </div>
+    <main>
+        <main class="main__form-contenedor">
+            <div class="form__container">
+                <form class="main__form" action="" method="GET">
+                    <div class="form">
+                        <h2>Envianos tu mensaje</h2>
+                        <label class="form__label" for="name">Nombre:</label>
+                        <input class="form__input" type="text" name="name" aria-label="Ingresar nombre" required/>
+                        <br>
+                        <label class="form__label" for="email">Mail:</label>
+                        <input class="form__input form__input--error" type="email" name="email" aria-label="Ingresar correo electrónico" required/>
+                        <br>
+                        <label for="elegir_consulta">¿Sobre qué queres consultar?:  </label>
+                        <select class="form__select" name="elegir_consulta">
+                        <option name= "estilos">Estilos de cerveza</option>
+                        <option name= "datos">Historia</option>
+                        <option name= "mejores">Mejores cervecerías</option>
+                        </select>
+                        <br>
+                        <textarea class="form__textarea" name="consulta" rows="10" cols="40">Ingresá tu consulta acá...</textarea>
+                        <br>
+                        <label for="acepta" class="form__label"><input class="form__checkbox" type="checkbox" id="acepta" name="acepta" value="1" aria-label="Desea recibir el newsletter?"/> Quiero recibir información semanal sobre cervezas.</label>
+                        <div class="contenedor_btn">
+                            <button class="btn__borrar" type="reset" value="Borrar todo" aria-label="Borrar todo el formulario">Borrar</button> 
+                            <button class="btn__enviar" type="submit" value="Enviar">Enviar</button>    
+                        </div>
+                    </div>    
+                </form>
+            </div>          
+        </main>
+
+        <!--Footer-->
+    <footer class="footer">
+        <div class="footer__titulo">
+            <h3>
+                ¡Seguinos en las redes! 
+            </h3>
+        </div>
+        <div class="footer__imagen">
+            <div class="footer__imagen-fb">
+                <a target="_blank" href="https://www.facebook.com"><img src="img/fb.png" alt="Facebook"></a>
+            </div>
+            <div class="footer__imagen-ig">
+                <a target="_blank" href="https://www.instagram.com"><img src="img/ig.png" alt="instagram"></a>
+            </div> 
+            <div class="footer__imagen-tw">
+                <a target="_blank" href="https://www.twitter.com"><img src="img/tw.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Copyright-->
+    <div class="copy">
+        <p>Copyright© Lucas Fuentes 2021</p>
+    </div>
+</body>
+</html>

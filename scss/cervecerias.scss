@@ -1,0 +1,98 @@
+.cervecerias__top {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cervecerias.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+
+    h2 {
+        font-family: $titulos-font;
+        color: $titulos-color;
+        font-size: $titulos-size;
+    }
+}
+
+@media (max-width: 580px) {
+    .cervecerias__top h2 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 360px) {
+    .cervecerias__top h2 {
+        font-size: 30px;
+    }
+}
+
+
+.cerveceriasMes__titulo {
+    font-size: 32px;
+    text-decoration: underline;
+    margin-top: 20px;
+}
+
+.cerveceriasMes__titulo h2 {
+    padding: 10 15;
+}
+
+.contenedor__cervecerias {
+    display: flex;
+    margin: 2rem 15px 2rem 15px;
+}
+
+.contenedor__cervecerias-img {
+    max-width: 100%;
+}
+
+.contenedor__cervecerias-texto {
+    margin-left: 20px;
+}
+
+.contenedor__cervecerias-texto h2 {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.contenedor__cervecerias-texto p {
+    font-size: 20px;
+    width: 80%;
+}
+
+.cervecerias__img {
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.cervecerias__btn {
+    background-color: #1b1b1b;
+    border: 1px solid #1b1b1b;
+    border-radius: none;
+    color: white;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+
+.cervecerias__btn:hover {
+    background-color: white;
+    color: #1b1b1b;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor__cervecerias {
+        flex-direction: column;
+    }
+
+    .contenedor__cervecerias-texto {
+        margin-left: 0;
+    }
+
+    .cerveceriasMes__titulo {
+        font-size: 26px;
+    }
+}

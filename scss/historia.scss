@@ -1,0 +1,202 @@
+.historia__top {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/historia.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+
+    h2 {
+        font-family: $titulos-font;
+        color: $titulos-color;
+        font-size: $titulos-size;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 460px) {
+    .historia__top h2 {
+        font-size: 50px;
+    }
+}
+
+.historia__info {
+    width: 100%;
+    padding: 0 15;
+
+    h2 {
+        text-align: center;
+        font-size: 4rem;
+        padding: 15 15 35;
+        text-decoration: underline;
+    }
+}
+
+.historia__hover-subtitulo {
+    font-size: 1.8rem;
+    text-align: center;
+    color: $color-secundario;
+    margin: auto;
+    padding: 15px;
+}
+
+.historia__hover-contenedor {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-template-areas:
+        ". .";
+    justify-items: center;
+    margin-bottom: 3em;
+    padding: 0 15px;
+
+    article {
+        position: relative;
+        cursor: pointer;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        transition: all 400ms ease-out;
+        will-change: transform;
+    }
+
+    .historia__hover-capa {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(49, 49, 49, 0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+    }
+
+    article:hover>.historia__hover-capa {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    article:hover>img {
+        transform: scale(1.3);
+    }
+
+    h4 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+        color: white;
+        font-size: 20px;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+        margin-top: 20px;
+        padding: 0 15;
+        vertical-align: middle;
+    }
+}
+
+.historia__info-p {
+    text-align: center;
+    width: 100%;
+    padding: 10 80;
+    margin-bottom: 25px;
+    font-size: 1.2em;
+}
+
+.carousel__historia {
+    width: 100%;
+    padding: 0 20%;
+
+    h5 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold;
+    }
+
+    p {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    }
+}
+
+
+.carousel-indicators{
+    li {
+        background-color: #000;
+    }
+} 
+
+.carousel-control-next-icon {
+    background-image: url(../img/chevron.png);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(../img/chevron.png);
+    transform: scaleX(-1)
+}
+
+.carousel-item{
+    opacity: 0.9;
+} 
+
+@media (max-width: 1000px) {
+    .carousel__historia {
+        padding: 0 10%;
+    }
+}
+
+
+@media (max-width: 810px) {
+    .historia__hover-contenedor {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr;
+        gap: 10px 10px;
+        grid-template-areas:
+            ". .";
+        justify-items: center;
+        margin-bottom: 1em;
+    }
+
+    .historia__info h2 {
+        font-size: 3rem;
+        padding: 15 15 15;
+    }
+
+    .historia__hover-subtitulo {
+        font-size: 1.5rem;
+    }
+
+    .historia__info-p {
+        padding: 10 20;
+    }
+}
+
+@media (max-width: 500px) {
+    .historia__hover-contenedor article:hover>.historia__hover-capa h4 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 374px) {
+    .historia__hover-contenedor article:hover>.historia__hover-capa h4 {
+        font-size: 0.8em;
+    }
+
+    .historia__info-p {
+        font-size: 1em;
+    }
+}
+

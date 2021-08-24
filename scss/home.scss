@@ -1,0 +1,159 @@
+$titulos-font: 'Tourney', cursive;
+$titulos-color: #fff;
+$titulos-size: 80px;
+$color-secundario: #FE9920;
+
+
+.index__top {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cerveza.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+
+    h2 {
+        font-family: $titulos-font;
+        color: $titulos-color;
+        font-size: $titulos-size;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .index__top h2 {
+        font-size: 50px;
+    }
+}
+
+.info__home-contenedor {
+    display: grid;
+    height: 80%;
+    place-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/frases.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info__home {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    .info__home-cajas {
+        display: grid;
+        align-content: space-between;
+        background: white;
+        width: calc(33% - 10px);
+        padding: 25px;
+        border-radius: 3px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .info__home-contenido {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .info__home-nombre {
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .info__home-job {
+        font-size: 18px;
+        font-weight: 500;
+        color: $color-secundario;
+    }
+
+    .info__home-img {
+        height: 75px;
+        width: 75px;
+        padding: 3px;
+        background: $color-secundario;
+        border-radius: 50%;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        border-color: #fff;
+    }
+}
+
+
+@media (max-width: 1045px) {
+    .info__home .info__home-cajas {
+        width: calc(50% - 10px);
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 702px) {
+    .info__home .info__home-cajas {
+        width: 100%;
+    }
+
+    .info__home-contenedor {
+        height: 80%;
+    }
+}
+
+.bajada {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px;
+
+}
+
+.bajada__texto {
+    font-size: 20px;
+    width: 50%;
+    padding: 25;
+}
+
+.bajada__img-birra {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+@media (max-width: 920px) {
+    .bajada {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .bajada__texto {
+        font-size: 20px;
+        width: 100%;
+        padding: 10 15px;
+        text-align: center;
+    }
+
+    .bajada__img-birra {
+        max-width: 500px;
+        border-radius: 1rem;
+    }
+}

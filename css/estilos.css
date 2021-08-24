@@ -1,0 +1,704 @@
+.logo__img {
+  height: 100px; }
+
+nav {
+  position: fixed;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  flex-wrap: wrap;
+  z-index: 99; }
+
+nav .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600; }
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none; }
+
+nav ul li {
+  margin: 0 5px; }
+
+nav ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px; }
+
+nav ul li a:hover {
+  color: #111;
+  background: #fff; }
+
+nav .menu-btn i {
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none; }
+
+input[type="checkbox"] {
+  display: none; }
+
+@media (max-width: 920px) {
+  nav {
+    padding: 0 20px 0 20px; } }
+
+@media (max-width: 920px) {
+  nav .menu-btn i {
+    display: block; }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; }
+  nav ul {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block; }
+  #click:checked ~ ul {
+    left: 0; }
+  nav ul li {
+    width: 100%;
+    margin: 40px 0; }
+  nav ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px; }
+  #click:checked ~ ul li a {
+    margin-left: 0px; }
+  nav ul li a:hover {
+    background: none;
+    color: #FE9920; } }
+
+.index__top {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cerveza.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center; }
+  .index__top h2 {
+    font-family: "Tourney", cursive;
+    color: #fff;
+    font-size: 80px; }
+
+@media (max-width: 360px) {
+  .index__top h2 {
+    font-size: 50px; } }
+
+.info__home-contenedor {
+  display: grid;
+  height: 80%;
+  place-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/frases.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.info__home {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between; }
+  .info__home .info__home-cajas {
+    display: grid;
+    align-content: space-between;
+    background: white;
+    width: calc(33% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); }
+  .info__home .info__home-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px; }
+  .info__home .info__home-nombre {
+    font-weight: 600;
+    font-size: 18px; }
+  .info__home .info__home-job {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FE9920; }
+  .info__home .info__home-img {
+    height: 75px;
+    width: 75px;
+    padding: 3px;
+    background: #FE9920;
+    border-radius: 50%; }
+  .info__home img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-color: #fff; }
+
+@media (max-width: 1045px) {
+  .info__home .info__home-cajas {
+    width: calc(50% - 10px);
+    margin: 10px 0; } }
+
+@media (max-width: 702px) {
+  .info__home .info__home-cajas {
+    width: 100%; }
+  .info__home-contenedor {
+    height: 80%; } }
+
+.bajada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 25px; }
+
+.bajada__texto {
+  font-size: 20px;
+  width: 50%;
+  padding: 25; }
+
+.bajada__img-birra {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 1rem; }
+
+@media (max-width: 920px) {
+  .bajada {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 25px; }
+  .bajada__texto {
+    font-size: 20px;
+    width: 100%;
+    padding: 10 15px;
+    text-align: center; }
+  .bajada__img-birra {
+    max-width: 500px;
+    border-radius: 1rem; } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, #fc8b2f, #a10101); }
+
+.footer__titulo {
+  display: flex;
+  color: black;
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  margin: 10px auto 20px; }
+
+.footer__imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 15px; }
+
+.footer__imagen-fb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; }
+
+.footer__imagen-ig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px; }
+
+.footer__imagen-tw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.footer__imagen-fb img {
+  max-width: 50px; }
+
+.footer__imagen-ig img {
+  max-width: 50px; }
+
+.footer__imagen-tw img {
+  max-width: 50px; }
+
+.copy {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 5px 15%;
+  text-align: center; }
+
+.main__estilo {
+  max-width: 100%; }
+
+.historia__top {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/historia.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center; }
+  .historia__top h2 {
+    font-family: "Tourney", cursive;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600; }
+
+@media (max-width: 460px) {
+  .historia__top h2 {
+    font-size: 50px; } }
+
+.historia__info {
+  width: 100%;
+  padding: 0 15; }
+  .historia__info h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 15 15 35;
+    text-decoration: underline; }
+
+.historia__hover-subtitulo {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #FE9920;
+  margin: auto;
+  padding: 15px; }
+
+.historia__hover-contenedor {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 0.8fr 1.2fr;
+  grid-template-rows: 1fr;
+  gap: 10px 10px;
+  grid-template-areas: ". .";
+  justify-items: center;
+  margin-bottom: 3em;
+  padding: 0 15px; }
+  .historia__hover-contenedor article {
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 6px; }
+  .historia__hover-contenedor img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+  .historia__hover-contenedor .historia__hover-capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(49, 49, 49, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; }
+  .historia__hover-contenedor article:hover > .historia__hover-capa {
+    opacity: 1;
+    visibility: visible; }
+  .historia__hover-contenedor article:hover > img {
+    transform: scale(1.3); }
+  .historia__hover-contenedor h4 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 20px;
+    padding: 0 15;
+    vertical-align: middle; }
+
+.historia__info-p {
+  text-align: center;
+  width: 100%;
+  padding: 10 80;
+  margin-bottom: 25px;
+  font-size: 1.2em; }
+
+.carousel__historia {
+  width: 100%;
+  padding: 0 20%; }
+  .carousel__historia h5 {
+    color: black;
+    font-size: 28px;
+    font-weight: bold; }
+  .carousel__historia p {
+    color: black;
+    font-size: 22px;
+    font-weight: bold; }
+
+.carousel-indicators li {
+  background-color: #000; }
+
+.carousel-control-next-icon {
+  background-image: url(../img/chevron.png); }
+
+.carousel-control-prev-icon {
+  background-image: url(../img/chevron.png);
+  transform: scaleX(-1); }
+
+.carousel-item {
+  opacity: 0.9; }
+
+@media (max-width: 1000px) {
+  .carousel__historia {
+    padding: 0 10%; } }
+
+@media (max-width: 810px) {
+  .historia__hover-contenedor {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr;
+    gap: 10px 10px;
+    grid-template-areas: ". .";
+    justify-items: center;
+    margin-bottom: 1em; }
+  .historia__info h2 {
+    font-size: 3rem;
+    padding: 15 15 15; }
+  .historia__hover-subtitulo {
+    font-size: 1.5rem; }
+  .historia__info-p {
+    padding: 10 20; } }
+
+@media (max-width: 500px) {
+  .historia__hover-contenedor article:hover > .historia__hover-capa h4 {
+    font-size: 1em; } }
+
+@media (max-width: 374px) {
+  .historia__hover-contenedor article:hover > .historia__hover-capa h4 {
+    font-size: 0.8em; }
+  .historia__info-p {
+    font-size: 1em; } }
+
+.estilos__top {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo_estilos.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center; }
+  .estilos__top h2 {
+    font-family: "Tourney", cursive;
+    color: #fff;
+    font-size: 80px;
+    font-weight: 600; }
+
+@media (max-width: 360px) {
+  .estilos__top_h2 {
+    font-size: 50px; } }
+
+.estilos {
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "titulo titulo" "lager ale";
+  column-gap: 30px;
+  row-gap: 20px; }
+
+.estilos__tit {
+  font-size: 28px;
+  text-decoration: underline;
+  color: #1b1b1b;
+  text-align: center;
+  padding: 10 15; }
+
+.estilos__parrafo {
+  padding: 10 15;
+  text-align: center; }
+
+.container__img-lager {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/cerveza4.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.container__img-ale {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../img/cerveza3.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.display-4__estilos {
+  color: white;
+  font-weight: 600;
+  color: #ff8b00; }
+
+.lead__estilos {
+  color: white; }
+
+.col {
+  padding: 10 0; }
+
+.card-text1 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ff8b00; }
+
+.estilos__lager-img {
+  max-width: 80%;
+  padding: 10 15;
+  border-radius: 2rem; }
+
+.estilos__ale-img {
+  max-width: 80%;
+  padding: 10 15;
+  border-radius: 2rem; }
+
+@media screen and (max-width: 900px) {
+  .estilos {
+    display: inline-block;
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 702px) {
+  .estilos {
+    display: inline-block;
+    margin-bottom: 15px; }
+  .estilos__parrafo {
+    padding: 15 35; }
+  .estilos__tit {
+    padding: 10 15; } }
+
+.contacto__top {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center; }
+  .contacto__top h2 {
+    font-family: "Tourney", cursive;
+    color: #fff;
+    font-size: 80px; }
+
+@media (max-width: 580px) {
+  .contacto__top h2 {
+    font-size: 40px; } }
+
+.main__form-contenedor {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/form_contacto.jpg);
+  background-position: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%; }
+
+.form__container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5px; }
+
+.form__checkbox {
+  display: inline-block !important; }
+
+.main__form .form {
+  border: 1px solid #1b1b1b;
+  border-radius: 10px;
+  max-width: 500px;
+  background: rgba(255, 221, 72, 0.75);
+  overflow: hidden;
+  padding: 40px; }
+
+.form h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+  text-decoration-color: #1b1b1b;
+  margin-bottom: 20px; }
+
+.form__label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px; }
+
+.form__input {
+  border-width: 0px;
+  border-bottom: 1px solid #000000;
+  background: transparent;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  outline: 0; }
+
+.form__textarea {
+  border: 1px solid #1b1b1b;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 2px;
+  outline: 0; }
+
+.form__select {
+  border: 1px solid #1b1b1b;
+  margin-bottom: 10px; }
+
+.contenedor_btn {
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around; }
+
+.btn__borrar {
+  width: 50%;
+  letter-spacing: 1px;
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  border-radius: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btn__enviar {
+  width: 50%;
+  letter-spacing: 1px;
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  border-radius: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none;
+  margin: 4px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.btn__enviar:hover {
+  background-color: white;
+  color: #383838; }
+
+.btn__borrar:hover {
+  background-color: white;
+  color: #383838; }
+
+.cervecerias__top {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/cervecerias.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  text-align: center; }
+  .cervecerias__top h2 {
+    font-family: "Tourney", cursive;
+    color: #fff;
+    font-size: 80px; }
+
+@media (max-width: 580px) {
+  .cervecerias__top h2 {
+    font-size: 50px; } }
+
+@media (max-width: 360px) {
+  .cervecerias__top h2 {
+    font-size: 30px; } }
+
+.cerveceriasMes__titulo {
+  font-size: 32px;
+  text-decoration: underline;
+  margin-top: 20px; }
+
+.cerveceriasMes__titulo h2 {
+  padding: 10 15; }
+
+.contenedor__cervecerias {
+  display: flex;
+  margin: 2rem 15px 2rem 15px; }
+
+.contenedor__cervecerias-img {
+  max-width: 100%; }
+
+.contenedor__cervecerias-texto {
+  margin-left: 20px; }
+
+.contenedor__cervecerias-texto h2 {
+  font-size: 28px;
+  text-decoration: underline; }
+
+.contenedor__cervecerias-texto p {
+  font-size: 20px;
+  width: 80%; }
+
+.cervecerias__img {
+  max-width: 100%;
+  border-radius: 1rem; }
+
+.cervecerias__btn {
+  background-color: #1b1b1b;
+  border: 1px solid #1b1b1b;
+  border-radius: none;
+  color: white;
+  padding: 5px 5px;
+  text-decoration: none; }
+
+.cervecerias__btn:hover {
+  background-color: white;
+  color: #1b1b1b;
+  transition: 0.5s; }
+
+@media screen and (max-width: 768px) {
+  .contenedor__cervecerias {
+    flex-direction: column; }
+  .contenedor__cervecerias-texto {
+    margin-left: 0; }
+  .cerveceriasMes__titulo {
+    font-size: 26px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%; }

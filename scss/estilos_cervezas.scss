@@ -25,30 +25,6 @@
     }
 }
 
-
-.estilos {
-    padding-bottom: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "titulo titulo""lager ale";
-    column-gap: 30px;
-    row-gap: 20px;
-}
-
-.estilos__tit {
-    font-size: 28px;
-    text-decoration: underline;
-    color: #1b1b1b;
-    text-align: center;
-    padding: 10 15;
-}
-
-.estilos__parrafo {
-    padding: 10 15;
-    text-align: center;
-}
-
 .container__img-lager {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/cerveza4.jpg);
     background-size: cover;
@@ -61,11 +37,10 @@
     background-position: center;
 }
 
-
 .display-4__estilos {
     color: white;
     font-weight: 600;
-    color: #ff8b00;
+    color: $color-secundario;
 }
 
 .lead__estilos {
@@ -80,7 +55,7 @@
     margin-bottom: 0;
     font-size: 24px;
     font-weight: 600;
-    color: #ff8b00;
+    color: $color-secundario;
 }
 
 .estilos__lager-img {
@@ -93,27 +68,4 @@
     max-width: 80%;
     padding: 10 15;
     border-radius: 2rem;
-}
-
-
-@media screen and (max-width: 900px) {
-    .estilos {
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 702px) {
-    .estilos {
-        display: inline-block;
-        margin-bottom: 15px;
-    }
-
-    .estilos__parrafo {
-        padding: 15 35;
-    }
-
-    .estilos__tit {
-        padding: 10 15;
-    }
 }

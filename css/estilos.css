@@ -181,7 +181,8 @@ input[type="checkbox"] {
 .bajada__img-birra {
   max-width: 500px;
   width: 100%;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  border: 5px solid #FE9920; }
 
 @media (max-width: 920px) {
   .bajada {
@@ -427,26 +428,6 @@ input[type="checkbox"] {
   .estilos__top_h2 {
     font-size: 50px; } }
 
-.estilos {
-  padding-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: "titulo titulo" "lager ale";
-  column-gap: 30px;
-  row-gap: 20px; }
-
-.estilos__tit {
-  font-size: 28px;
-  text-decoration: underline;
-  color: #1b1b1b;
-  text-align: center;
-  padding: 10 15; }
-
-.estilos__parrafo {
-  padding: 10 15;
-  text-align: center; }
-
 .container__img-lager {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/cerveza4.jpg);
   background-size: cover;
@@ -460,7 +441,7 @@ input[type="checkbox"] {
 .display-4__estilos {
   color: white;
   font-weight: 600;
-  color: #ff8b00; }
+  color: #FE9920; }
 
 .lead__estilos {
   color: white; }
@@ -472,7 +453,7 @@ input[type="checkbox"] {
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 600;
-  color: #ff8b00; }
+  color: #FE9920; }
 
 .estilos__lager-img {
   max-width: 80%;
@@ -483,20 +464,6 @@ input[type="checkbox"] {
   max-width: 80%;
   padding: 10 15;
   border-radius: 2rem; }
-
-@media screen and (max-width: 900px) {
-  .estilos {
-    display: inline-block;
-    margin-bottom: 15px; } }
-
-@media screen and (max-width: 702px) {
-  .estilos {
-    display: inline-block;
-    margin-bottom: 15px; }
-  .estilos__parrafo {
-    padding: 15 35; }
-  .estilos__tit {
-    padding: 10 15; } }
 
 .contacto__top {
   width: 100%;
@@ -543,7 +510,7 @@ input[type="checkbox"] {
   border: 1px solid #1b1b1b;
   border-radius: 10px;
   max-width: 500px;
-  background: rgba(255, 221, 72, 0.75);
+  background: rgba(254, 153, 32, 0.75);
   overflow: hidden;
   padding: 40px; }
 
@@ -556,7 +523,8 @@ input[type="checkbox"] {
 .form__label {
   display: block;
   font-size: 15px;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  cursor: pointer; }
 
 .form__input {
   border-width: 0px;
@@ -595,7 +563,8 @@ input[type="checkbox"] {
   margin: 4px 2px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
 
 .btn__enviar {
   width: 50%;
@@ -609,7 +578,8 @@ input[type="checkbox"] {
   margin: 4px 2px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
 
 .btn__enviar:hover {
   background-color: white;
@@ -647,9 +617,9 @@ input[type="checkbox"] {
   font-size: 32px;
   text-decoration: underline;
   margin-top: 20px; }
-
-.cerveceriasMes__titulo h2 {
-  padding: 10 15; }
+  .cerveceriasMes__titulo h2 {
+    padding: 10 15;
+    color: #1b1b1b; }
 
 .contenedor__cervecerias {
   display: flex;
@@ -660,18 +630,19 @@ input[type="checkbox"] {
 
 .contenedor__cervecerias-texto {
   margin-left: 20px; }
-
-.contenedor__cervecerias-texto h2 {
-  font-size: 28px;
-  text-decoration: underline; }
-
-.contenedor__cervecerias-texto p {
-  font-size: 20px;
-  width: 80%; }
+  .contenedor__cervecerias-texto h2 {
+    font-size: 28px;
+    color: #FE9920;
+    text-decoration: underline; }
+  .contenedor__cervecerias-texto p {
+    font-size: 20px;
+    color: #1b1b1b;
+    width: 80%; }
 
 .cervecerias__img {
   max-width: 100%;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  border: 5px solid #FE9920; }
 
 .cervecerias__btn {
   background-color: #1b1b1b;

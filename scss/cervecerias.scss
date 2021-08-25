@@ -34,10 +34,11 @@
     font-size: 32px;
     text-decoration: underline;
     margin-top: 20px;
-}
 
-.cerveceriasMes__titulo h2 {
-    padding: 10 15;
+    h2 {
+        padding: 10 15;
+        color: $color-primario;
+    }
 }
 
 .contenedor__cervecerias {
@@ -51,26 +52,29 @@
 
 .contenedor__cervecerias-texto {
     margin-left: 20px;
-}
+    
+    h2 {
+        font-size: 28px;
+        color:$color-secundario;
+        text-decoration: underline;
+    }
 
-.contenedor__cervecerias-texto h2 {
-    font-size: 28px;
-    text-decoration: underline;
-}
-
-.contenedor__cervecerias-texto p {
-    font-size: 20px;
-    width: 80%;
+    p {
+        font-size: 20px;
+        color: $color-primario;
+        width: 80%;
+    }
 }
 
 .cervecerias__img {
     max-width: 100%;
     border-radius: 1rem;
+    border: $borde-imagenes;
 }
 
 .cervecerias__btn {
-    background-color: #1b1b1b;
-    border: 1px solid #1b1b1b;
+    background-color: $color-primario;
+    border: 1px solid $color-primario;
     border-radius: none;
     color: white;
     padding: 5px 5px;
@@ -79,7 +83,7 @@
 
 .cervecerias__btn:hover {
     background-color: white;
-    color: #1b1b1b;
+    color: $color-primario;
     transition: 0.5s;
 }
 

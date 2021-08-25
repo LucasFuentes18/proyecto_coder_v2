@@ -50,10 +50,10 @@
 }
 
 .main__form .form {
-    border: 1px solid #1b1b1b;
+    border: 1px solid $color-primario;
     border-radius: 10px;
     max-width: 500px;
-    background: rgba(255, 221, 72, 0.75);
+    background: rgba($color-secundario, 0.75);
     overflow: hidden;
     padding: 40px;
 }
@@ -61,7 +61,7 @@
 .form h2 {
     font-size: 1.5em;
     text-decoration: underline;
-    text-decoration-color: #1b1b1b;
+    text-decoration-color: $color-primario;
     margin-bottom: 20px;
 }
 
@@ -69,6 +69,7 @@
     display: block;
     font-size: 15px;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .form__input {
@@ -113,13 +114,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .btn__enviar {
     width: 50%;
     letter-spacing: 1px;
-    background-color: #1b1b1b;
-    border: 1px solid #1b1b1b;
+    background-color: $color-primario;
+    border: 1px solid $color-primario;
     border-radius: none;
     color: white;
     padding: 5px 5px;
@@ -128,6 +130,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .btn__enviar:hover {

@@ -458,6 +458,10 @@ input[type="checkbox"] {
 .col {
   padding: 10px 0; }
 
+.card {
+  border: 2px solid #FE9920;
+  margin: 0 auto; }
+
 .card-text1 {
   margin-bottom: 0;
   font-size: 24px;
@@ -502,15 +506,6 @@ input[type="checkbox"] {
   align-items: center;
   padding: 5px; }
 
-/*.main__form {
-    border: 1px solid $color-primario;
-    border-radius: 10px;
-    max-width: 500px;
-    background: rgba($color-secundario, 0.75);
-    overflow: hidden;
-    padding: 40px;
-}
-*/
 .form {
   border: 1px solid #1b1b1b;
   border-radius: 10px;

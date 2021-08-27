@@ -20,8 +20,8 @@
 
 
 @media (max-width: 360px) {
-    .estilos__top_h2 {
-        font-size: 50px;
+    .estilos__top h2 {
+        font-size: 40px;
     }
 }
 
@@ -38,17 +38,17 @@
 }
 
 .display-4__estilos {
-    color: white;
+    color: $titulos-color;
     font-weight: 600;
     color: $color-secundario;
 }
 
 .lead__estilos {
-    color: white
+    color: $titulos-color;
 }
 
 .col {
-    padding: 10 0;
+    padding: 10px 0;
 }
 
 .card-text1 {
@@ -56,16 +56,4 @@
     font-size: 24px;
     font-weight: 600;
     color: $color-secundario;
-}
-
-.estilos__lager-img {
-    max-width: 80%;
-    padding: 10 15;
-    border-radius: 2rem;
-}
-
-.estilos__ale-img {
-    max-width: 80%;
-    padding: 10 15;
-    border-radius: 2rem;
 }

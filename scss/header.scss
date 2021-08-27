@@ -1,71 +1,67 @@
-
 .logo__img {
     height: 100px;
 }
 
-nav {
+.header__nav {
     position: fixed;
     display: flex;
     height: 100px;
     width: 100%;
-    background: #1b1b1b;
+    background: $color-primario;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px 0 20px;
     flex-wrap: wrap;
     z-index: 99;
+
+
+    .header__ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    .header__li {
+        margin: 0 5px;
+    }
+
+    .header__a {
+        color: $titulos-color;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        letter-spacing: 1px;
+    }
+
+    .header__a:hover {
+        color: $color-primario;
+        background: $titulos-color;
+    }
+
+    .menu-btn i {
+        color: $titulos-color;
+        font-size: 22px;
+        cursor: pointer;
+        display: none;
+    }
 }
 
-nav .logo {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-}
-
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 5px;
-}
-
-nav ul li a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-}
-
-nav ul li a:hover {
-    color: #111;
-    background: #fff;
-}
-
-nav .menu-btn i {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
-    display: none;
-}
 
 input[type="checkbox"] {
     display: none;
 }
 
 @media (max-width: 920px) {
-    nav {
+    .header__nav {
         padding: 0 20px 0 20px;
     }
 }
 
 @media (max-width: 920px) {
-    nav .menu-btn i {
+    .header__nav .menu-btn i {
         display: block;
     }
 
@@ -73,39 +69,39 @@ input[type="checkbox"] {
         content: "\f00d";
     }
 
-    nav ul {
+    .header__nav .header__ul {
         position: fixed;
         top: 100px;
         left: -100%;
-        background: black;
+        background-color: $color-terceario;
         height: 100vh;
         width: 100%;
         text-align: center;
         display: block;
     }
 
-    #click:checked~ul {
+    #click:checked~.header__ul {
         left: 0;
     }
 
-    nav ul li {
+    .header__nav .header__ul .header__li {
         width: 100%;
         margin: 40px 0;
     }
 
-    nav ul li a {
+    .header__nav .header__ul .header__li .header__a {
         width: 100%;
         margin-left: -100%;
         display: block;
         font-size: 20px;
     }
 
-    #click:checked~ul li a {
+    #click:checked~.header__ul .header__li .header__a {
         margin-left: 0px;
     }
 
-    nav ul li a:hover {
+    .header__nav .header__ul .header__li .header__a:hover {
         background: none;
-        color: #FE9920;
+        color: $color-secundario;
     }
 }

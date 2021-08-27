@@ -6,7 +6,7 @@
 
 .footer__titulo {
     display: flex;
-    color: rgb(0, 0, 0);
+    color: $color-primario;
     font-size: 20px;
     margin: auto;
     text-align: center;
@@ -27,6 +27,14 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+
+    img {
+        max-width: 50px;
+    }
+    
+    img:hover {
+        transform: scale(1.2)
+    }
 }
 
 .footer__imagen-ig {
@@ -35,6 +43,14 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
+    
+    img {
+        max-width: 50px;
+    }
+
+    img:hover {
+        transform: scale(1.2)
+    }
 }
 
 .footer__imagen-tw {
@@ -42,23 +58,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    img {
+        max-width: 50px;
+    }
+
+    img:hover {
+        transform: scale(1.2)
+    }
 }
 
-.footer__imagen-fb img {
-    max-width: 50px;
-}
-
-.footer__imagen-ig img {
-    max-width: 50px;
-}
-
-.footer__imagen-tw img {
-    max-width: 50px;
-}
 
 .copy {
-    background-color: black;
-    color: white;
+    background-color: $color-primario;
+    color: $titulos-color;
     margin: 0;
     padding: 5px 15%;
     text-align: center;

@@ -1,86 +1,11 @@
-.logo__img {
-  height: 100px; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-nav {
-  position: fixed;
-  display: flex;
-  height: 100px;
-  width: 100%;
-  background: #1b1b1b;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px 0 20px;
-  flex-wrap: wrap;
-  z-index: 99; }
-
-nav .logo {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 600; }
-
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none; }
-
-nav ul li {
-  margin: 0 5px; }
-
-nav ul li a {
-  color: #f2f2f2;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 500;
-  padding: 8px 15px;
-  border-radius: 5px;
-  letter-spacing: 1px; }
-
-nav ul li a:hover {
-  color: #111;
-  background: #fff; }
-
-nav .menu-btn i {
-  color: #fff;
-  font-size: 22px;
-  cursor: pointer;
-  display: none; }
-
-input[type="checkbox"] {
-  display: none; }
-
-@media (max-width: 920px) {
-  nav {
-    padding: 0 20px 0 20px; } }
-
-@media (max-width: 920px) {
-  nav .menu-btn i {
-    display: block; }
-  #click:checked ~ .menu-btn i:before {
-    content: "\f00d"; }
-  nav ul {
-    position: fixed;
-    top: 100px;
-    left: -100%;
-    background: black;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    display: block; }
-  #click:checked ~ ul {
-    left: 0; }
-  nav ul li {
-    width: 100%;
-    margin: 40px 0; }
-  nav ul li a {
-    width: 100%;
-    margin-left: -100%;
-    display: block;
-    font-size: 20px; }
-  #click:checked ~ ul li a {
-    margin-left: 0px; }
-  nav ul li a:hover {
-    background: none;
-    color: #FE9920; } }
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  height: 100%; }
 
 .index__top {
   width: 100%;
@@ -150,9 +75,7 @@ input[type="checkbox"] {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    border-color: #fff; }
+    border-radius: 50%; }
 
 @media (max-width: 1045px) {
   .info__home .info__home-cajas {
@@ -162,6 +85,9 @@ input[type="checkbox"] {
 @media (max-width: 702px) {
   .info__home .info__home-cajas {
     width: 100%; }
+  .info__home .info__home-img {
+    height: 50px;
+    width: 50px; }
   .info__home-contenedor {
     height: 80%; } }
 
@@ -200,6 +126,81 @@ input[type="checkbox"] {
     max-width: 500px;
     border-radius: 1rem; } }
 
+.logo__img {
+  height: 100px; }
+
+.header__nav {
+  position: fixed;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px 0 20px;
+  flex-wrap: wrap;
+  z-index: 99; }
+  .header__nav .header__ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0; }
+  .header__nav .header__li {
+    margin: 0 5px; }
+  .header__nav .header__a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px; }
+  .header__nav .header__a:hover {
+    color: #1b1b1b;
+    background: #fff; }
+  .header__nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none; }
+
+input[type="checkbox"] {
+  display: none; }
+
+@media (max-width: 920px) {
+  .header__nav {
+    padding: 0 20px 0 20px; } }
+
+@media (max-width: 920px) {
+  .header__nav .menu-btn i {
+    display: block; }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d"; }
+  .header__nav .header__ul {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    background-color: #383838;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block; }
+  #click:checked ~ .header__ul {
+    left: 0; }
+  .header__nav .header__ul .header__li {
+    width: 100%;
+    margin: 40px 0; }
+  .header__nav .header__ul .header__li .header__a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px; }
+  #click:checked ~ .header__ul .header__li .header__a {
+    margin-left: 0px; }
+  .header__nav .header__ul .header__li .header__a:hover {
+    background: none;
+    color: #FE9920; } }
+
 .footer {
   display: flex;
   flex-direction: column;
@@ -207,7 +208,7 @@ input[type="checkbox"] {
 
 .footer__titulo {
   display: flex;
-  color: black;
+  color: #1b1b1b;
   font-size: 20px;
   margin: auto;
   text-align: center;
@@ -226,6 +227,10 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   margin-right: 10px; }
+  .footer__imagen-fb img {
+    max-width: 50px; }
+  .footer__imagen-fb img:hover {
+    transform: scale(1.2); }
 
 .footer__imagen-ig {
   display: flex;
@@ -233,25 +238,24 @@ input[type="checkbox"] {
   justify-content: center;
   align-items: center;
   margin-right: 10px; }
+  .footer__imagen-ig img {
+    max-width: 50px; }
+  .footer__imagen-ig img:hover {
+    transform: scale(1.2); }
 
 .footer__imagen-tw {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.footer__imagen-fb img {
-  max-width: 50px; }
-
-.footer__imagen-ig img {
-  max-width: 50px; }
-
-.footer__imagen-tw img {
-  max-width: 50px; }
+  .footer__imagen-tw img {
+    max-width: 50px; }
+  .footer__imagen-tw img:hover {
+    transform: scale(1.2); }
 
 .copy {
-  background-color: black;
-  color: white;
+  background-color: #1b1b1b;
+  color: #fff;
   margin: 0;
   padding: 5px 15%;
   text-align: center; }
@@ -282,15 +286,17 @@ input[type="checkbox"] {
 
 .historia__info {
   width: 100%;
-  padding: 0 15; }
+  padding: 0 15px; }
   .historia__info h2 {
     text-align: center;
-    font-size: 4rem;
-    padding: 15 15 35;
-    text-decoration: underline; }
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 20px 20px;
+    text-decoration: underline;
+    color: #1b1b1b; }
 
 .historia__hover-subtitulo {
-  font-size: 1.8rem;
+  font-size: 24px;
   text-align: center;
   color: #FE9920;
   margin: auto;
@@ -304,7 +310,7 @@ input[type="checkbox"] {
   gap: 10px 10px;
   grid-template-areas: ". .";
   justify-items: center;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   padding: 0 15px; }
   .historia__hover-contenedor article {
     position: relative;
@@ -314,9 +320,10 @@ input[type="checkbox"] {
     border-radius: 6px; }
   .historia__hover-contenedor img {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
     transition: all 400ms ease-out;
-    will-change: transform; }
+    will-change: transform;
+    border: 5px solid #FE9920; }
   .historia__hover-contenedor .historia__hover-capa {
     position: absolute;
     top: 0;
@@ -326,27 +333,29 @@ input[type="checkbox"] {
     transition: all 400ms ease-out;
     opacity: 0;
     visibility: hidden;
-    text-align: center; }
+    text-align: center;
+    border: 5px solid #FE9920; }
   .historia__hover-contenedor article:hover > .historia__hover-capa {
     opacity: 1;
     visibility: visible; }
   .historia__hover-contenedor article:hover > img {
     transform: scale(1.3); }
+  .historia__hover-contenedor .historia__hover-texto {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .historia__hover-contenedor h4 {
-    margin-top: 70px;
-    margin-bottom: 15px;
-    color: white;
+    color: #fff;
     font-size: 20px;
-    margin-bottom: 120px;
     transition: all 400ms ease-out;
-    margin-top: 20px;
-    padding: 0 15;
+    padding: 0 15px;
     vertical-align: middle; }
 
 .historia__info-p {
   text-align: center;
   width: 100%;
-  padding: 10 80;
+  padding: 10px 80px;
   margin-bottom: 25px;
   font-size: 1.2em; }
 
@@ -354,16 +363,16 @@ input[type="checkbox"] {
   width: 100%;
   padding: 0 20%; }
   .carousel__historia h5 {
-    color: black;
+    color: #1b1b1b;
     font-size: 28px;
     font-weight: bold; }
   .carousel__historia p {
-    color: black;
+    color: #1b1b1b;
     font-size: 22px;
     font-weight: bold; }
 
 .carousel-indicators li {
-  background-color: #000; }
+  background-color: #1b1b1b; }
 
 .carousel-control-next-icon {
   background-image: url(../img/chevron.png); }
@@ -391,19 +400,19 @@ input[type="checkbox"] {
     margin-bottom: 1em; }
   .historia__info h2 {
     font-size: 3rem;
-    padding: 15 15 15; }
+    padding: 15px 15px 15px; }
   .historia__hover-subtitulo {
-    font-size: 1.5rem; }
+    font-size: 20px; }
   .historia__info-p {
-    padding: 10 20; } }
+    padding: 10px 20px; } }
 
 @media (max-width: 500px) {
   .historia__hover-contenedor article:hover > .historia__hover-capa h4 {
-    font-size: 1em; } }
+    font-size: 14px; } }
 
 @media (max-width: 374px) {
   .historia__hover-contenedor article:hover > .historia__hover-capa h4 {
-    font-size: 0.8em; }
+    font-size: 12px; }
   .historia__info-p {
     font-size: 1em; } }
 
@@ -425,8 +434,8 @@ input[type="checkbox"] {
     font-weight: 600; }
 
 @media (max-width: 360px) {
-  .estilos__top_h2 {
-    font-size: 50px; } }
+  .estilos__top h2 {
+    font-size: 40px; } }
 
 .container__img-lager {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/cerveza4.jpg);
@@ -439,31 +448,21 @@ input[type="checkbox"] {
   background-position: center; }
 
 .display-4__estilos {
-  color: white;
+  color: #fff;
   font-weight: 600;
   color: #FE9920; }
 
 .lead__estilos {
-  color: white; }
+  color: #fff; }
 
 .col {
-  padding: 10 0; }
+  padding: 10px 0; }
 
 .card-text1 {
   margin-bottom: 0;
   font-size: 24px;
   font-weight: 600;
   color: #FE9920; }
-
-.estilos__lager-img {
-  max-width: 80%;
-  padding: 10 15;
-  border-radius: 2rem; }
-
-.estilos__ale-img {
-  max-width: 80%;
-  padding: 10 15;
-  border-radius: 2rem; }
 
 .contacto__top {
   width: 100%;
@@ -503,24 +502,34 @@ input[type="checkbox"] {
   align-items: center;
   padding: 5px; }
 
-.form__checkbox {
-  display: inline-block !important; }
-
-.main__form .form {
+/*.main__form {
+    border: 1px solid $color-primario;
+    border-radius: 10px;
+    max-width: 500px;
+    background: rgba($color-secundario, 0.75);
+    overflow: hidden;
+    padding: 40px;
+}
+*/
+.form {
   border: 1px solid #1b1b1b;
   border-radius: 10px;
   max-width: 500px;
   background: rgba(254, 153, 32, 0.75);
   overflow: hidden;
   padding: 40px; }
-
-.form h2 {
-  font-size: 1.5em;
-  text-decoration: underline;
-  text-decoration-color: #1b1b1b;
-  margin-bottom: 20px; }
+  .form h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-decoration-color: #1b1b1b;
+    margin-bottom: 20px; }
 
 .form__label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px; }
+
+.form__label-check {
   display: block;
   font-size: 15px;
   margin-bottom: 5px;
@@ -528,23 +537,30 @@ input[type="checkbox"] {
 
 .form__input {
   border-width: 0px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #1b1b1b;
   background: transparent;
   width: 100%;
   padding: 5px;
   margin-bottom: 20px;
-  outline: 0; }
+  outline: 0;
+  cursor: pointer; }
 
 .form__textarea {
   border: 1px solid #1b1b1b;
   width: 100%;
   padding: 5px;
-  margin-bottom: 2px;
-  outline: 0; }
+  margin-bottom: 10px;
+  outline: 0;
+  cursor: pointer; }
+
+.form__checkbox {
+  display: inline-block !important;
+  cursor: pointer; }
 
 .form__select {
   border: 1px solid #1b1b1b;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  cursor: pointer; }
 
 .contenedor_btn {
   display: flex;
@@ -614,22 +630,25 @@ input[type="checkbox"] {
     font-size: 30px; } }
 
 .cerveceriasMes__titulo {
-  font-size: 32px;
   text-decoration: underline;
   margin-top: 20px; }
   .cerveceriasMes__titulo h2 {
-    padding: 10 15;
-    color: #1b1b1b; }
+    font-size: 50px;
+    padding: 10px 15px;
+    color: #1b1b1b;
+    text-align: center;
+    margin-bottom: 15px; }
 
 .contenedor__cervecerias {
   display: flex;
-  margin: 2rem 15px 2rem 15px; }
+  padding: 10px 15px;
+  margin-bottom: 15px; }
 
 .contenedor__cervecerias-img {
   max-width: 100%; }
 
 .contenedor__cervecerias-texto {
-  margin-left: 20px; }
+  padding: 0 15px; }
   .contenedor__cervecerias-texto h2 {
     font-size: 28px;
     color: #FE9920;
@@ -637,7 +656,7 @@ input[type="checkbox"] {
   .contenedor__cervecerias-texto p {
     font-size: 20px;
     color: #1b1b1b;
-    width: 80%; }
+    width: 100%; }
 
 .cervecerias__img {
   max-width: 100%;
@@ -664,12 +683,3 @@ input[type="checkbox"] {
     margin-left: 0; }
   .cerveceriasMes__titulo {
     font-size: 26px; } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Roboto Condensed', sans-serif;
-  height: 100%; }

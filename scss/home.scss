@@ -3,6 +3,7 @@ $titulos-color: #fff;
 $titulos-size: 80px;
 $color-primario: #1b1b1b;
 $color-secundario: #FE9920;
+$color-terceario: #383838;
 $borde-imagenes: 5px solid $color-secundario;
 
 
@@ -93,8 +94,6 @@ $borde-imagenes: 5px solid $color-secundario;
         width: 100%;
         object-fit: cover;
         border-radius: 50%;
-        border: 2px solid #fff;
-        border-color: #fff;
     }
 }
 
@@ -111,6 +110,10 @@ $borde-imagenes: 5px solid $color-secundario;
         width: 100%;
     }
 
+    .info__home .info__home-img {
+        height: 50px;
+        width: 50px;
+    }
     .info__home-contenedor {
         height: 80%;
     }

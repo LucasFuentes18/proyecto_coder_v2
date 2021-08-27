@@ -26,18 +26,20 @@
 
 .historia__info {
     width: 100%;
-    padding: 0 15;
+    padding: 0 15px;
 
     h2 {
         text-align: center;
-        font-size: 4rem;
-        padding: 15 15 35;
+        font-size: 3rem;
+        font-weight: bold;
+        padding: 20px 20px;
         text-decoration: underline;
+        color: $color-primario;
     }
 }
 
 .historia__hover-subtitulo {
-    font-size: 1.8rem;
+    font-size: 24px;
     text-align: center;
     color: $color-secundario;
     margin: auto;
@@ -53,7 +55,7 @@
     grid-template-areas:
         ". .";
     justify-items: center;
-    margin-bottom: 3em;
+    margin-bottom: 2em;
     padding: 0 15px;
 
     article {
@@ -66,9 +68,10 @@
 
     img {
         max-width: 100%;
-        max-height: 100%;
+        height: 100%;
         transition: all 400ms ease-out;
         will-change: transform;
+        border: 5px solid $color-secundario;
     }
 
     .historia__hover-capa {
@@ -81,6 +84,7 @@
         opacity: 0;
         visibility: hidden;
         text-align: center;
+        border: 5px solid $color-secundario;
     }
 
     article:hover>.historia__hover-capa {
@@ -92,15 +96,18 @@
         transform: scale(1.3);
     }
 
+    .historia__hover-texto {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     h4 {
-        margin-top: 70px;
-        margin-bottom: 15px;
-        color: white;
+        color: $titulos-color;
         font-size: 20px;
-        margin-bottom: 120px;
         transition: all 400ms ease-out;
-        margin-top: 20px;
-        padding: 0 15;
+        padding: 0 15px;
         vertical-align: middle;
     }
 }
@@ -108,7 +115,7 @@
 .historia__info-p {
     text-align: center;
     width: 100%;
-    padding: 10 80;
+    padding: 10px 80px;
     margin-bottom: 25px;
     font-size: 1.2em;
 }
@@ -118,13 +125,13 @@
     padding: 0 20%;
 
     h5 {
-    color: black;
+    color: $color-primario;
     font-size: 28px;
     font-weight: bold;
     }
 
     p {
-    color: black;
+    color: $color-primario;
     font-size: 22px;
     font-weight: bold;
     }
@@ -133,7 +140,7 @@
 
 .carousel-indicators{
     li {
-        background-color: #000;
+        background-color: $color-primario;
     }
 } 
 
@@ -172,31 +179,30 @@
 
     .historia__info h2 {
         font-size: 3rem;
-        padding: 15 15 15;
+        padding: 15px 15px 15px;
     }
 
     .historia__hover-subtitulo {
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 
     .historia__info-p {
-        padding: 10 20;
+        padding: 10px 20px;
     }
 }
 
 @media (max-width: 500px) {
     .historia__hover-contenedor article:hover>.historia__hover-capa h4 {
-        font-size: 1em;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 374px) {
     .historia__hover-contenedor article:hover>.historia__hover-capa h4 {
-        font-size: 0.8em;
+        font-size: 12px;
     }
 
     .historia__info-p {
         font-size: 1em;
     }
 }
-

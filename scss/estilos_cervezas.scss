@@ -10,7 +10,7 @@
     padding: 0 15px;
     text-align: center;
 
-    h2 {
+    h1 {
         font-family: $titulos-font;
         color: $titulos-color;
         font-size: $titulos-size;
@@ -20,7 +20,7 @@
 
 
 @media (max-width: 360px) {
-    .estilos__top h2 {
+    .estilos__top h1 {
         font-size: 40px;
     }
 }

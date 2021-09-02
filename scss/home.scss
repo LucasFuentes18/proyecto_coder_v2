@@ -19,7 +19,7 @@ $borde-imagenes: 5px solid $color-secundario;
     padding: 0 15px;
     text-align: center;
 
-    h2 {
+    h1 {
         font-family: $titulos-font;
         color: $titulos-color;
         font-size: $titulos-size;
@@ -28,7 +28,7 @@ $borde-imagenes: 5px solid $color-secundario;
 }
 
 @media (max-width: 360px) {
-    .index__top h2 {
+    .index__top h1 {
         font-size: 50px;
     }
 }

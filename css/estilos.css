@@ -18,13 +18,13 @@ body {
   align-items: center;
   padding: 0 15px;
   text-align: center; }
-  .index__top h2 {
+  .index__top h1 {
     font-family: "Tourney", cursive;
     color: #fff;
     font-size: 80px; }
 
 @media (max-width: 360px) {
-  .index__top h2 {
+  .index__top h1 {
     font-size: 50px; } }
 
 .info__home-contenedor {
@@ -274,14 +274,14 @@ input[type="checkbox"] {
   align-items: center;
   padding: 0 15px;
   text-align: center; }
-  .historia__top h2 {
+  .historia__top h1 {
     font-family: "Tourney", cursive;
     color: #fff;
     font-size: 80px;
     font-weight: 600; }
 
 @media (max-width: 460px) {
-  .historia__top h2 {
+  .historia__top h1 {
     font-size: 50px; } }
 
 .historia__info {
@@ -427,14 +427,14 @@ input[type="checkbox"] {
   align-items: center;
   padding: 0 15px;
   text-align: center; }
-  .estilos__top h2 {
+  .estilos__top h1 {
     font-family: "Tourney", cursive;
     color: #fff;
     font-size: 80px;
     font-weight: 600; }
 
 @media (max-width: 360px) {
-  .estilos__top h2 {
+  .estilos__top h1 {
     font-size: 40px; } }
 
 .container__img-lager {
@@ -479,13 +479,13 @@ input[type="checkbox"] {
   align-items: center;
   padding: 0 15px;
   text-align: center; }
-  .contacto__top h2 {
+  .contacto__top h1 {
     font-family: "Tourney", cursive;
     color: #fff;
     font-size: 80px; }
 
 @media (max-width: 580px) {
-  .contacto__top h2 {
+  .contacto__top h1 {
     font-size: 40px; } }
 
 .main__form-contenedor {
@@ -611,17 +611,17 @@ input[type="checkbox"] {
   align-items: center;
   padding: 0 15px;
   text-align: center; }
-  .cervecerias__top h2 {
+  .cervecerias__top h1 {
     font-family: "Tourney", cursive;
     color: #fff;
     font-size: 80px; }
 
 @media (max-width: 580px) {
-  .cervecerias__top h2 {
+  .cervecerias__top h1 {
     font-size: 50px; } }
 
 @media (max-width: 360px) {
-  .cervecerias__top h2 {
+  .cervecerias__top h1 {
     font-size: 30px; } }
 
 .cerveceriasMes__titulo {
@@ -636,7 +636,7 @@ input[type="checkbox"] {
 
 .contenedor__cervecerias {
   display: flex;
-  padding: 10px 15px;
+  padding: 50px 150px;
   margin-bottom: 15px; }
 
 .contenedor__cervecerias-img {
@@ -673,8 +673,10 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 768px) {
   .contenedor__cervecerias {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 15px 60px; }
   .contenedor__cervecerias-texto {
-    margin-left: 0; }
+    margin-left: 0;
+    margin-top: 10px; }
   .cerveceriasMes__titulo {
     font-size: 26px; } }

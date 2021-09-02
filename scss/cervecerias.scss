@@ -10,7 +10,7 @@
     padding: 0 15px;
     text-align: center;
 
-    h2 {
+    h1 {
         font-family: $titulos-font;
         color: $titulos-color;
         font-size: $titulos-size;
@@ -18,13 +18,13 @@
 }
 
 @media (max-width: 580px) {
-    .cervecerias__top h2 {
+    .cervecerias__top h1 {
         font-size: 50px;
     }
 }
 
 @media (max-width: 360px) {
-    .cervecerias__top h2 {
+    .cervecerias__top h1 {
         font-size: 30px;
     }
 }
@@ -45,7 +45,7 @@
 
 .contenedor__cervecerias {
     display: flex;
-    padding: 10px 15px;
+    padding: 50px 150px;
     margin-bottom: 15px;
 }
 
@@ -93,10 +93,12 @@
 @media screen and (max-width: 768px) {
     .contenedor__cervecerias {
         flex-direction: column;
+        padding: 15px 60px;
     }
 
     .contenedor__cervecerias-texto {
         margin-left: 0;
+        margin-top: 10px;
     }
 
     .cerveceriasMes__titulo {

@@ -230,7 +230,8 @@ input[type="checkbox"] {
   .footer__imagen-fb img {
     max-width: 50px; }
   .footer__imagen-fb img:hover {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    transition: all 200ms ease-out; }
 
 .footer__imagen-ig {
   display: flex;
@@ -241,7 +242,8 @@ input[type="checkbox"] {
   .footer__imagen-ig img {
     max-width: 50px; }
   .footer__imagen-ig img:hover {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    transition: all 200ms ease-out; }
 
 .footer__imagen-tw {
   display: flex;
@@ -251,7 +253,8 @@ input[type="checkbox"] {
   .footer__imagen-tw img {
     max-width: 50px; }
   .footer__imagen-tw img:hover {
-    transform: scale(1.2); }
+    transform: scale(1.2);
+    transition: all 200ms ease-out; }
 
 .copy {
   background-color: #1b1b1b;

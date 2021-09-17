@@ -89,7 +89,7 @@ body {
     height: 50px;
     width: 50px; }
   .info__home-contenedor {
-    height: 80%; } }
+    height: auto; } }
 
 .bajada {
   display: flex;
@@ -97,7 +97,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 25px; }
+  padding: 50px 25px; }
 
 .bajada__texto {
   font-size: 20px;
@@ -155,6 +155,9 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     letter-spacing: 1px; }
+  .header__nav .header__activo {
+    color: #1b1b1b;
+    background: #d8d8d8; }
   .header__nav .header__a:hover {
     color: #1b1b1b;
     background: #fff; }
@@ -204,15 +207,19 @@ input[type="checkbox"] {
 .footer {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to left, #fc8b2f, #a10101); }
+  background-image: linear-gradient(to left, #fc8b2f, #a10101);
+  padding: 20px 0; }
 
 .footer__titulo {
   display: flex;
+  margin: auto;
+  margin: 10px auto 20px; }
+
+.footer__titulo-text {
   color: #1b1b1b;
   font-size: 20px;
-  margin: auto;
   text-align: center;
-  margin: 10px auto 20px; }
+  font-weight: 700; }
 
 .footer__imagen {
   display: flex;
@@ -530,8 +537,7 @@ input[type="checkbox"] {
 .form__label-check {
   display: block;
   font-size: 15px;
-  margin-bottom: 5px;
-  cursor: pointer; }
+  margin-bottom: 5px; }
 
 .form__input {
   border-width: 0px;
@@ -540,16 +546,14 @@ input[type="checkbox"] {
   width: 100%;
   padding: 5px;
   margin-bottom: 20px;
-  outline: 0;
-  cursor: pointer; }
+  outline: 0; }
 
 .form__textarea {
   border: 1px solid #1b1b1b;
   width: 100%;
   padding: 5px;
   margin-bottom: 10px;
-  outline: 0;
-  cursor: pointer; }
+  outline: 0; }
 
 .form__checkbox {
   display: inline-block !important;

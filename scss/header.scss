@@ -36,6 +36,11 @@
         letter-spacing: 1px;
     }
 
+    .header__activo {
+        color: $color-primario;
+        background: rgb(216, 216, 216);
+    }
+    
     .header__a:hover {
         color: $color-primario;
         background: $titulos-color;
@@ -48,6 +53,7 @@
         display: none;
     }
 }
+
 
 
 input[type="checkbox"] {

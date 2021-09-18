@@ -113,11 +113,11 @@
 }
 
 .historia__info-p {
-    text-align: center;
     width: 100%;
     padding: 10px 80px;
     margin-bottom: 25px;
-    font-size: 1.2em;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 .carousel__historia {
@@ -156,6 +156,14 @@
 .carousel-item{
     opacity: 0.9;
 } 
+
+.carousel__historia h5 {
+    color: $color-secundario;
+}
+
+.carousel__historia p {
+    color: $titulos-color;
+}
 
 @media (max-width: 1000px) {
     .carousel__historia {

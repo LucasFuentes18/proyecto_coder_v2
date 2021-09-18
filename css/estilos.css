@@ -100,9 +100,9 @@ body {
   padding: 50px 25px; }
 
 .bajada__texto {
-  font-size: 20px;
+  font-size: 22px;
   width: 50%;
-  padding: 25; }
+  padding: 25px; }
 
 .bajada__img-birra {
   max-width: 500px;
@@ -160,7 +160,8 @@ body {
     background: #d8d8d8; }
   .header__nav .header__a:hover {
     color: #1b1b1b;
-    background: #fff; }
+    background: #fff;
+    transition: 0.5s; }
   .header__nav .menu-btn i {
     color: #fff;
     font-size: 22px;
@@ -208,16 +209,16 @@ input[type="checkbox"] {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to left, #fc8b2f, #a10101);
-  padding: 20px 0; }
+  padding: 10px 0; }
 
 .footer__titulo {
   display: flex;
-  margin: auto;
-  margin: 10px auto 20px; }
+  margin: 0 auto;
+  padding: 20px; }
 
 .footer__titulo-text {
   color: #1b1b1b;
-  font-size: 20px;
+  font-size: 30px;
   text-align: center;
   font-weight: 700; }
 
@@ -363,11 +364,11 @@ input[type="checkbox"] {
     vertical-align: middle; }
 
 .historia__info-p {
-  text-align: center;
   width: 100%;
   padding: 10px 80px;
   margin-bottom: 25px;
-  font-size: 1.2em; }
+  font-size: 18px;
+  line-height: 28px; }
 
 .carousel__historia {
   width: 100%;
@@ -393,6 +394,12 @@ input[type="checkbox"] {
 
 .carousel-item {
   opacity: 0.9; }
+
+.carousel__historia h5 {
+  color: #FE9920; }
+
+.carousel__historia p {
+  color: #fff; }
 
 @media (max-width: 1000px) {
   .carousel__historia {
@@ -601,11 +608,13 @@ input[type="checkbox"] {
 
 .btn__enviar:hover {
   background-color: white;
-  color: #383838; }
+  color: #383838;
+  transition: 0.5s; }
 
 .btn__borrar:hover {
   background-color: white;
-  color: #383838; }
+  color: #383838;
+  transition: 0.5s; }
 
 .cervecerias__top {
   width: 100%;
@@ -635,7 +644,7 @@ input[type="checkbox"] {
   text-decoration: underline;
   margin-top: 20px; }
   .cerveceriasMes__titulo h2 {
-    font-size: 50px;
+    font-size: 45px;
     padding: 10px 15px;
     color: #1b1b1b;
     text-align: center;
@@ -643,7 +652,7 @@ input[type="checkbox"] {
 
 .contenedor__cervecerias {
   display: flex;
-  padding: 50px 150px;
+  padding: 50px 5%;
   margin-bottom: 15px; }
 
 .contenedor__cervecerias-img {
@@ -651,7 +660,7 @@ input[type="checkbox"] {
 
 .contenedor__cervecerias-texto {
   padding: 0 15px; }
-  .contenedor__cervecerias-texto h2 {
+  .contenedor__cervecerias-texto h3 {
     font-size: 28px;
     color: #FE9920;
     text-decoration: underline; }
@@ -668,7 +677,6 @@ input[type="checkbox"] {
 .cervecerias__btn {
   background-color: #1b1b1b;
   border: 1px solid #1b1b1b;
-  border-radius: none;
   color: white;
   padding: 5px 5px;
   text-decoration: none; }
@@ -687,3 +695,11 @@ input[type="checkbox"] {
     margin-top: 10px; }
   .cerveceriasMes__titulo {
     font-size: 26px; } }
+
+.hr__cervecerias {
+  margin: 0 auto;
+  height: 0px;
+  border-radius: 2px;
+  color: #FE9920;
+  border: 1px solid currentColor;
+  width: 90%; }

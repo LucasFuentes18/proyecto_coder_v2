@@ -35,7 +35,7 @@
     margin-top: 20px;
 
     h2 {
-        font-size: 50px;
+        font-size: 45px;
         padding: 10px 15px;
         color: $color-primario;
         text-align: center;
@@ -45,7 +45,7 @@
 
 .contenedor__cervecerias {
     display: flex;
-    padding: 50px 150px;
+    padding: 50px 5%;
     margin-bottom: 15px;
 }
 
@@ -56,7 +56,7 @@
 .contenedor__cervecerias-texto {
     padding: 0 15px;
     
-    h2 {
+    h3 {
         font-size: 28px;
         color:$color-secundario;
         text-decoration: underline;
@@ -78,7 +78,6 @@
 .cervecerias__btn {
     background-color: $color-primario;
     border: 1px solid $color-primario;
-    border-radius: none;
     color: white;
     padding: 5px 5px;
     text-decoration: none;
@@ -104,4 +103,13 @@
     .cerveceriasMes__titulo {
         font-size: 26px;
     }
+}
+
+.hr__cervecerias {
+    margin: 0 auto;
+    height: 0px;
+    border-radius: 2px;
+    color: $color-secundario;
+    border: 1px solid currentColor;
+    width: 90%
 }

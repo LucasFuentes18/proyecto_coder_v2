@@ -44,6 +44,7 @@
     .header__a:hover {
         color: $color-primario;
         background: $titulos-color;
+        transition: 0.5s;
     }
 
     .menu-btn i {
